@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Z Station 1",
+    "address": "12 Main Road",
+    "city": "Christchurch",
+    "location": { "type": "Point", "coordinates": [172.6362, -43.5321] },
+    "hours": { "open24_7": true, "closesAt": null },
+    "prices": { "z91": 2.69, "zxPremium": 2.89, "diesel": 1.99 },
+    "services": ["carwash", "coffee"]
+  }
+]
