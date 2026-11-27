@@ -82,7 +82,7 @@ npm install
    - Add `z-journey-hub` after `.net/`.
 
    ```text
-   MONGO_URI=mongodb+srv://yourname:yourpassword@cluster0.abcde.mongodb.net/z-journey-hub
+   MONGO_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/z-journey-hub
    PORT=5000
    ```
 
