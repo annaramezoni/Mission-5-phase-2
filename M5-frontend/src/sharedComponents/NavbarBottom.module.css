@@ -1,0 +1,28 @@
+.navBottom {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navBottom a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--navbar-inective-color);
+}
+
+.navBottom img {
+  width: 24px;
+  height: 24px;
+}
+
+.navBottom .active {
+  color: var(--navbar-active-color);
+}

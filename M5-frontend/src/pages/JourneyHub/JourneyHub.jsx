@@ -1,4 +1,5 @@
-import { Link } from "react-router";
+import NavbarBottom from "../../sharedComponents/NavbarBottom";
+import { Link, Outlet } from "react-router";
 
 export default function JourneyHub() {
   return (
@@ -12,6 +13,8 @@ export default function JourneyHub() {
 
         <Link to="/journey-hub/stations">Station Results</Link>
       </nav>
+      <Outlet />
+      <NavbarBottom />
     </div>
   );
 }
