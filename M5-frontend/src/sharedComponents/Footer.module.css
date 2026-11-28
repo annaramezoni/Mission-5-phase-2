@@ -1,0 +1,125 @@
+/* Shared footer. Colours come from Anna's variables in index.css (:root). */
+
+.footer {
+  /* Anna's --navy in index.css is #eae9f1 (a light grey, same as --lavender).
+     The design needs a dark navy, so we override it here.
+     TODO: delete this line once --navy in index.css has the real Figma value. */
+  --navy: #2a1f5c;
+
+  margin: 24px 16px 16px;
+  padding: 20px 16px 24px;
+  border-radius: 16px;
+  background-color: var(--lavender);
+  color: var(--text-color);
+}
+
+/* ---------- 1. Dropdown menus ---------- */
+
+.menu {
+  margin-bottom: 12px;
+}
+
+.menuTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  cursor: pointer;
+  list-style: none; /* hides the default triangle */
+}
+
+/* Safari shows its own triangle unless we hide it here too */
+.menuTitle::-webkit-details-marker {
+  display: none;
+}
+
+.chevron {
+  width: 10px;
+  height: 10px;
+  transform: rotate(90deg); /* the icon points right, so turn it to point down */
+  transition: transform 0.2s;
+}
+
+/* When the menu is open, flip the arrow to point up */
+.menu[open] .chevron {
+  transform: rotate(-90deg);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--divider-color);
+  margin: 16px 0;
+}
+
+/* ---------- 2. Social icons ---------- */
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.socialIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* ---------- 3. App badges ---------- */
+
+.appTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.appBadges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+
+/* ---------- 4. Legal links ---------- */
+
+.legalList {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.legalList li {
+  margin-bottom: 12px;
+}
+
+.legalLink {
+  font-size: 12px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.legalLink:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 180px;
+}
+
+/* ---------- Keyboard focus ---------- */
+
+.menuTitle:focus-visible,
+.footer a:focus-visible {
+  outline: 3px solid var(--location-blue-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
