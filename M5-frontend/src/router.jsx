@@ -18,19 +18,20 @@ const router = createBrowserRouter([
       {
         path: "journey-hub",
         Component: JourneyHub,
-      },
-
-      {
-        path: "journey-hub/compare",
-        Component: ComparePrices,
-      },
-      {
-        path: "journey-hub/station-details",
-        Component: StationDetais,
-      },
-      {
-        path: "journey-hub/stations",
-        Component: StationResults,
+        children: [
+          {
+            path: "compare",
+            Component: ComparePrices,
+          },
+          {
+            path: "station-details",
+            Component: StationDetais,
+          },
+          {
+            path: "stations",
+            Component: StationResults,
+          },
+        ],
       },
     ],
   },
