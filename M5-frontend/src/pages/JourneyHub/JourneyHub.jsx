@@ -1,3 +1,4 @@
+import NavbarBottom from "../../sharedComponents/NavbarBottom";
 import { Link } from "react-router";
 
 export default function JourneyHub() {
@@ -12,6 +13,7 @@ export default function JourneyHub() {
 
         <Link to="/journey-hub/stations">Station Results</Link>
       </nav>
+      <NavbarBottom />
     </div>
   );
 }
